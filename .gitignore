@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+.venv
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# Data
+Data/
+data/
+*.csv
+*.parquet
+*.pkl
+*.pickle
+
+# Models and Outputs
+outputs/
+models/
+*.h5
+*.joblib
+*.rds
+
+# Logs and Debug
+*.log
+logs/
+pipeline_execution.log
+
+# MLflow
+mlruns/
+.trash/
+
+# IDE and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Agent
+.agent/
+.gemini/
