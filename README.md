@@ -31,10 +31,8 @@ fraud-detection-mlops/
 │   ├── processed/              # Feature-engineered data
 │   └── features/               # Feature engineering artifacts
 ├── notebooks/
-│   ├── 01_eda.ipynb           # Exploratory Data Analysis
-│   ├── 02_feature_engineering.ipynb  # Feature Pipeline
-│   ├── 03_modeling.ipynb      # Model Training & Evaluation
-│   └── 04_model_interpretation.ipynb # SHAP & Error Analysis
+│   ├── 01_eda_executed.ipynb  # Exploratory Data Analysis
+│   └── pipeline_execution.ipynb  # Interactive End-to-End Pipeline
 ├── src/
 │   ├── data_processing.py     # Data loading & validation
 │   ├── feature_engineering.py # Feature transformation pipeline
@@ -75,11 +73,11 @@ fraud-detection-mlops/
 
 Three gradient boosting models were trained and compared:
 
-| Model | AUC-ROC | PR-AUC | Inference Time |
-|-------|---------|--------|----------------|
-| **LightGBM** | 0.967 | 0.832 | 0.3ms/sample |
-| XGBoost | 0.962 | 0.815 | 0.5ms/sample |
-| Random Forest | 0.948 | 0.785 | 1.2ms/sample |
+| Model | ROC-AUC | PR-AUC | Status |
+|-------|---------|--------|---------|
+| **Random Forest** | **0.881** | **0.462** | **Best Model** |
+| LightGBM | 0.834 | 0.265 | Baseline |
+| Decision Tree | 0.833 | 0.238 | Teacher's Baseline |
 
 **Class Imbalance Strategy**: Used class weights (`scale_pos_weight`) instead of SMOTE to avoid generating unrealistic synthetic fraud patterns.
 
