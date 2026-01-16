@@ -8,7 +8,7 @@
 
 ---
 
-## 📋 Problem Statement
+## Problem Statement
 
 Credit card fraud detection is a critical challenge for financial institutions, with billions of dollars lost annually to fraudulent transactions. This project implements a **production-grade machine learning pipeline** using the [IEEE-CIS Fraud Detection dataset](https://www.kaggle.com/c/ieee-fraud-detection) to identify fraudulent transactions in real-time.
 
@@ -22,7 +22,7 @@ Credit card fraud detection is a critical challenge for financial institutions, 
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 ```
 fraud-detection-mlops/
@@ -49,7 +49,7 @@ fraud-detection-mlops/
 
 ---
 
-## 🔬 Approach
+## Approach
 
 ### Phase 1: Exploratory Data Analysis
 
@@ -97,7 +97,7 @@ Three gradient boosting models were trained and compared:
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -168,7 +168,7 @@ mlflow ui --backend-store-uri mlruns/
 
 ---
 
-## 🔧 Databricks Deployment Guide
+## Databricks Deployment Guide
 
 ### 1. Upload to Databricks Workspace
 
@@ -235,7 +235,7 @@ print(response.json())
 
 ---
 
-## 📊 Results
+## Results
 
 ### Model Performance
 
@@ -269,7 +269,7 @@ At the optimized threshold:
 
 ---
 
-## 🧪 Challenges & Solutions
+## Challenges & Solutions
 
 ### Challenge 1: Extreme Class Imbalance (3.5% fraud)
 
@@ -325,7 +325,7 @@ df['card1_freq'] = df['card1'].map(df['card1'].value_counts())
 
 ---
 
-## 🔄 Model Monitoring
+## Model Monitoring
 
 ### Concept Drift Detection
 
@@ -358,7 +358,7 @@ print(f"Avg inference time: {stats['avg_inference_time_ms']:.2f}ms")
 
 ---
 
-## 📁 File Reference
+## File Reference
 
 | File | Purpose |
 |------|---------|
@@ -373,7 +373,7 @@ print(f"Avg inference time: {stats['avg_inference_time_ms']:.2f}ms")
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -383,13 +383,13 @@ print(f"Avg inference time: {stats['avg_inference_time_ms']:.2f}ms")
 
 ---
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [IEEE Computational Intelligence Society](https://cis.ieee.org/) for the dataset
 - [Vesta Corporation](https://trustvesta.com/) for providing real-world transaction data
@@ -397,4 +397,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ for the MLOps community**
+**Built for the MLOps community**
