@@ -44,6 +44,7 @@ data/
 
 # Models and Outputs
 outputs/
+!outputs/visuals/
 models/
 *.h5
 *.joblib
@@ -56,6 +57,7 @@ pipeline_execution.log
 
 # MLflow
 mlruns/
+mlflow.db
 .trash/
 
 # IDE and Editors
