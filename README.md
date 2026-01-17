@@ -24,27 +24,29 @@ Credit card fraud detection is a critical challenge for financial institutions, 
 
 ## Project Architecture
 
-```
+```bash
 fraud-detection-mlops/
-├── Data/
-│   ├── raw/                    # Original IEEE-CIS dataset
-│   ├── processed/              # Feature-engineered data
-│   └── features/               # Feature engineering artifacts
-├── notebooks/
-│   ├── 01_eda_executed.ipynb  # Exploratory Data Analysis
-│   └── pipeline_execution.ipynb  # Interactive End-to-End Pipeline
-├── src/
-│   ├── data_processing.py     # Data loading & validation
-│   ├── feature_engineering.py # Feature transformation pipeline
-│   ├── train.py               # Enhanced training with MLflow & Visuals
-│   └── predict.py             # Inference pipeline with monitoring
-├── outputs/
-│   ├── visuals/               # Plots (CM, PR-Curve, Importance)
-│   ├── models/                # Trained model artifacts
-│   └── metrics/               # Performance CSVs
-├── mlruns/                    # MLflow experiment tracking
-├── requirements.txt           # Python dependencies
-└── README.md                  # This file
+├── Data/                       # Dataset Storage
+│   ├── raw/                    # Original IEEE-CIS CSV files
+│   ├── processed/              # Feature-engineered parquet files
+│   └── features/               # Pipeline artifacts (encoders, scalers)
+├── src/                        # Core Logic
+│   ├── data_processing.py      # Data loading & memory optimization
+│   ├── feature_engineering.py  # Transformation pipeline & aggregations
+│   ├── train.py                # Model training & enhanced MLflow logging
+│   └── predict.py              # Inference & drift monitoring
+├── notebooks/                  # Development & Demo
+│   ├── 01_eda_executed.ipynb   # Visual Exploratory Analysis
+│   └── pipeline_execution.ipynb # Interactive End-to-End Run
+├── outputs/                    # Exported Results
+│   ├── visuals/                # CM, PR-Curves, Correlations (Tracked)
+│   ├── models/                 # Serialized model (.pkl)
+│   └── metrics/                # Feature importance CSVs
+├── screenshots/                # MLflow Dashboard Previews
+├── run_pipeline.py             # Unified CLI Orchestrator
+├── requirements.txt            # Environment Dependencies
+├── .gitignore                  # Optimized tracking rules
+└── LICENSE                     # MIT License
 ```
 
 ---
